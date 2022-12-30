@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asgardian Army Sign-Up Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="transparent"></div>
+    <div class="leftside">
+      <div class="insideleft">
+        <div class="image">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a21c2816-49d4-4a5b-b6db-7634a5ea8671/deqsmlv-740da833-0582-4672-9c63-a58f1f79565c.png/v1/fill/w_638,h_604,strp/asgard_logo_by_spiderbyte64_deqsmlv-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjA0IiwicGF0aCI6IlwvZlwvYTIxYzI4MTYtNDlkNC00YTViLWI2ZGItNzYzNGE1ZWE4NjcxXC9kZXFzbWx2LTc0MGRhODMzLTA1ODItNDY3Mi05YzYzLWE1OGYxZjc5NTY1Yy5wbmciLCJ3aWR0aCI6Ijw9NjM4In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.R5bMAGrtXXim7EM_A84hkucgZewYCUOzB8_Uevmkwlc "
+            alt="Asgard Logo"
+          />
+        </div>
+        <div class="logotext">Asgardian Army</div>
+      </div>
+    </div>
+
+    <div class="rightside">
+      <div class="toprightside">
+        <div class="texts">
+          <div class="text1">
+            <strong>I Want <strong>You</strong> For Asgardian Army</strong>
+          </div>
+          <div class="text2">
+            Join Us Now <br />
+            You Know You Want To
+          </div>
+        </div>
+      </div>
+      <div class="bottomrightside">
+        <form action="http://httpbin.org/post" method="post">
+          <div class="formboxes">
+            <div>
+              <label for="firstname" class="required">First Name</label>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="Tony"
+                required
+                class="inputrequired"
+              />
+            </div>
+            <div>
+              <label for="lastname">Last Name</label>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Stark"
+              />
+            </div>
+            <div>
+              <label for="email" class="required">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="tonystark@starkindustries.com"
+                class="inputrequired"
+              />
+            </div>
+            <div>
+              <label for="phone" class="required">Phone Number</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                minlength="8"
+                maxlength="8"
+                placeholder="12345678"
+                required
+                class="inputrequired"
+              />
+            </div>
+            <div>
+              <label for="password" class="required">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                class="inputrequire passwordinput"
+                placeholder="Password"
+                class="inputrequired"
+                minlength="5"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{5,}$"
+              />
+              <div class="pwdrule">
+                <span id="char5">At least 5 characters:<br /></span>
+                <span id="let1">letters /</span>
+                <span id="cap1">capital letters /<br /></span>
+                <span id="num1">numbers /</span>
+                <span id="spl1">@$!%*?&</span>
+              </div>
+            </div>
+
+            <div>
+              <label for="confirm-password" class="required"
+                >Confirm Password
+              </label>
+              <input
+                type="password"
+                name="confirmpassword"
+                id="confirmpassword"
+                required
+                class="confirmpassinput"
+                placeholder="Confirm Password"
+                minlength="5"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{5,}$"
+              />
+              <div class="confirmpasserror">*Passwords does not match</div>
+            </div>
+          </div>
+          <div class="formbutton">
+            <div>
+              <button>Create Account</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="alraccount">
+          Already have an account? <a class="login" href="#">Log in</a>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
